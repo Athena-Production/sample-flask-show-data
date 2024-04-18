@@ -8,7 +8,7 @@ def connect_db():
     db_connection = mysql.connector.connect(
         host="athena-do-user-16198044-0.c.db.ondigitalocean.com",
         user="doadmin",
-        password=os.environ["DB_API_KEY"],
+        password="AVNS_G_K59rLh3HLpfthyzqU",
         database="defaultdb",
         port=25060
     )
