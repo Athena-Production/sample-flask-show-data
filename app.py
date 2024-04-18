@@ -5,13 +5,14 @@ app = Flask(__name__)
 
 # Function to connect to the database
 def connect_db():
-     db = mysql.connector.connect(
-        username="doadmin",
-        password="AVNS_G_K59rLh3HLpfthyzqU",
+     db_connection = mysql.connector.connect(
         host="athena-do-user-16198044-0.c.db.ondigitalocean.com",
-        port=25060,
+        user="doadmin",
+        password= os.environ["DB_API_KEY"],
         database="defaultdb",
+        port=25060
     )
+    cursor = db_connection.cursor()
    
 
 # Route to display data from the database
