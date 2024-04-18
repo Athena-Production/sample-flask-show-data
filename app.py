@@ -11,7 +11,7 @@ def connect_db():
         port=25060,
         database="defaultdb",
     )
-    cursor = db.cursor()
+   
 
 # Route to display data from the database
 @app.route('/')
