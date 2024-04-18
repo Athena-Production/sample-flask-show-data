@@ -22,6 +22,8 @@ def index():
     data = cursor.fetchall()
     conn.close()
     return render_template('index.html', data=data)
+'''
 @app.route("/")
 def hello_world():
     return render_template("index.html")
+'''
